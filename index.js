@@ -1,6 +1,12 @@
 const express = require('express')
 const fetch = require('node-fetch')
+const cors = require('cors');
 const app = express()
+
+
+app.use(cors({
+    origin: 'https://flickrimagereact.herokuapp.com/'
+}));
 
 app.get('/get', async (req, res) => {
   try {
