@@ -5,7 +5,7 @@ const app = express()
 
 
 app.use(cors({
-    origin: 'https://flickrimagereact.herokuapp.com/'
+    origin: '*'
 }));
 
 app.get('/get', async (req, res) => {
